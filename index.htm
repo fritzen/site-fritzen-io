@@ -22,6 +22,24 @@ body, html {
   height: 100%;
 }
 
+.frame {
+  height: 100%;
+  background-color: #eee;
+  background-position: center;
+  background-size: cover;
+  
+  animation: image 10s infinite alternate;
+}
+
+@keyframes image {
+  0% {
+    background-image: url('aboutus.jpg');
+  }
+  100% {
+    background-image: url('aboutus2.jpg');
+  }
+}
+
 .caption {
   position: absolute;
   left: 0;
@@ -39,6 +57,14 @@ body, html {
   letter-spacing: 10px;
 }
 
+.caption span.border1 {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 10px;
+}
+
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -49,10 +75,10 @@ h3 {
 </head>
 <body>
 
-  <div class="bgimg-1">
+  <div class="frame">    
     <div class="caption">
       <span class="border">FRITZEN.IO</span><br>
-      <span class="border">EDUARDO@FRITZEN.IO</span>
+      <span class="border1">EDUARDO@FRITZEN.IO</span>
     </div>
   </div>
 </body></html>
